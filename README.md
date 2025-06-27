@@ -1,6 +1,6 @@
 # 🌾 Bot Discord Game Nông Trại
 
-> **Bot Discord game nông trại hoàn chỉnh với AI thông minh và kinh tế cân bằng**
+> **Bot Discord game nông trại hoàn chỉnh với AI cân bằng kinh tế**
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![Discord.py](https://img.shields.io/badge/discord.py-2.3+-blue.svg)](https://discordpy.readthedocs.io/)
@@ -189,25 +189,6 @@ sudo swapon /swapfile
 - **Input validation**: Sanitize inputs
 - **Atomic transactions**: Database safety
 
-## 📚 Documentation
-
-- **[📖 Full Documentation](docs/DOCUMENTATION.md)** - Tài liệu đầy đủ
-- **[🛠️ Setup Guide](docs/SETUP.md)** - Hướng dẫn cài đặt
-- **[🏗️ Architecture](docs/ARCHITECTURE.md)** - Kiến trúc hệ thống
-- **[🚀 Ubuntu Deployment](docs/UBUNTU_DEPLOYMENT_GUIDE.md)** - Triển khai server
-
-### Features Documentation
-- **[🐟 Livestock System](docs/features/LIVESTOCK_SYSTEM_COMPLETE.md)**
-- **[🌾 Premium Crops](docs/features/PREMIUM_CROPS_SYSTEM.md)**
-- **[📱 Shortcuts & Help](docs/features/SHORTCUTS_AND_HELP_SYSTEM.md)**
-
-### Guides
-- **[🤖 Gemini Integration](docs/guides/GEMINI_INTEGRATION_GUIDE.md)**
-- **[💰 Economic Setup](docs/guides/GEMINI_ECONOMIC_SETUP_GUIDE.md)**
-- **[📡 Gemini SDK](docs/guides/GEMINI_SDK_UPDATE.md)**
-
-## 🤝 Contributing
-
 ### Development Setup
 ```bash
 # Clone repo
@@ -255,12 +236,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🆘 Support
 
-- **Issues**: [GitHub Issues](../../issues)
-- **Discord**: [Support Server](#)
-- **Email**: [Support Email](#)
+- **Discord**: [Support Server](https://discord.gg/fw4VdkBKXU)
+- **Email**: [Support Email](aownvn.latina@gmail.com)
 
 ---
 
-**Made with ❤️ by [Your Name]**
-
-*Bot nông trại Discord với AI thông minh cho cộng đồng gaming Việt Nam* 
+**Made with ❤️ by Latina**
