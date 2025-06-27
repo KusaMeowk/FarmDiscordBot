@@ -1,0 +1,347 @@
+{
+  "simulation_time": "2025-06-22T09:05:16.075803",
+  "weather_schedule": [
+    {
+      "time": "00:00",
+      "weather": "cloudy",
+      "duration": 60,
+      "players": 3,
+      "reasoning": "Ban đêm + ít người → thời tiết nhẹ nhàng",
+      "effects": {
+        "growth_rate": 1.0,
+        "sell_price": 1.0,
+        "quality_bonus": 1.1,
+        "satisfaction": 0.7,
+        "best_for": "Cân bằng chung"
+      }
+    },
+    {
+      "time": "01:00",
+      "weather": "cloudy",
+      "duration": 60,
+      "players": 3,
+      "reasoning": "Ban đêm + ít người → thời tiết nhẹ nhàng",
+      "effects": {
+        "growth_rate": 1.0,
+        "sell_price": 1.0,
+        "quality_bonus": 1.1,
+        "satisfaction": 0.7,
+        "best_for": "Cân bằng chung"
+      }
+    },
+    {
+      "time": "02:00",
+      "weather": "cloudy",
+      "duration": 60,
+      "players": 3,
+      "reasoning": "Ban đêm + ít người → thời tiết nhẹ nhàng",
+      "effects": {
+        "growth_rate": 1.0,
+        "sell_price": 1.0,
+        "quality_bonus": 1.1,
+        "satisfaction": 0.7,
+        "best_for": "Cân bằng chung"
+      }
+    },
+    {
+      "time": "03:00",
+      "weather": "cloudy",
+      "duration": 60,
+      "players": 3,
+      "reasoning": "Ban đêm + ít người → thời tiết nhẹ nhàng",
+      "effects": {
+        "growth_rate": 1.0,
+        "sell_price": 1.0,
+        "quality_bonus": 1.1,
+        "satisfaction": 0.7,
+        "best_for": "Cân bằng chung"
+      }
+    },
+    {
+      "time": "04:00",
+      "weather": "cloudy",
+      "duration": 60,
+      "players": 3,
+      "reasoning": "Ban đêm + ít người → thời tiết nhẹ nhàng",
+      "effects": {
+        "growth_rate": 1.0,
+        "sell_price": 1.0,
+        "quality_bonus": 1.1,
+        "satisfaction": 0.7,
+        "best_for": "Cân bằng chung"
+      }
+    },
+    {
+      "time": "05:00",
+      "weather": "cloudy",
+      "duration": 60,
+      "players": 3,
+      "reasoning": "Ban đêm + ít người → thời tiết nhẹ nhàng",
+      "effects": {
+        "growth_rate": 1.0,
+        "sell_price": 1.0,
+        "quality_bonus": 1.1,
+        "satisfaction": 0.7,
+        "best_for": "Cân bằng chung"
+      }
+    },
+    {
+      "time": "06:00",
+      "weather": "sunny",
+      "duration": 30,
+      "players": 8,
+      "reasoning": "Ít người chơi → chọn thời tiết dễ chơi để khuyến khích tham gia",
+      "effects": {
+        "growth_rate": 1.3,
+        "sell_price": 1.2,
+        "quality_bonus": 1.0,
+        "satisfaction": 0.8,
+        "best_for": "Tăng thu nhập nhanh"
+      }
+    },
+    {
+      "time": "07:00",
+      "weather": "sunny",
+      "duration": 30,
+      "players": 8,
+      "reasoning": "Ít người chơi → chọn thời tiết dễ chơi để khuyến khích tham gia",
+      "effects": {
+        "growth_rate": 1.3,
+        "sell_price": 1.2,
+        "quality_bonus": 1.0,
+        "satisfaction": 0.8,
+        "best_for": "Tăng thu nhập nhanh"
+      }
+    },
+    {
+      "time": "08:00",
+      "weather": "sunny",
+      "duration": 30,
+      "players": 8,
+      "reasoning": "Ít người chơi → chọn thời tiết dễ chơi để khuyến khích tham gia",
+      "effects": {
+        "growth_rate": 1.3,
+        "sell_price": 1.2,
+        "quality_bonus": 1.0,
+        "satisfaction": 0.8,
+        "best_for": "Tăng thu nhập nhanh"
+      }
+    },
+    {
+      "time": "09:00",
+      "weather": "sunny",
+      "duration": 30,
+      "players": 8,
+      "reasoning": "Ít người chơi → chọn thời tiết dễ chơi để khuyến khích tham gia",
+      "effects": {
+        "growth_rate": 1.3,
+        "sell_price": 1.2,
+        "quality_bonus": 1.0,
+        "satisfaction": 0.8,
+        "best_for": "Tăng thu nhập nhanh"
+      }
+    },
+    {
+      "time": "10:00",
+      "weather": "windy",
+      "duration": 30,
+      "players": 15,
+      "reasoning": "Tình hình tốt → tạo thử thách nhẹ với thời tiết windy",
+      "effects": {
+        "growth_rate": 1.2,
+        "sell_price": 1.1,
+        "quality_bonus": 0.9,
+        "satisfaction": 0.5,
+        "best_for": "Thu hoạch nhanh"
+      }
+    },
+    {
+      "time": "11:00",
+      "weather": "windy",
+      "duration": 30,
+      "players": 15,
+      "reasoning": "Tình hình tốt → tạo thử thách nhẹ với thời tiết windy",
+      "effects": {
+        "growth_rate": 1.2,
+        "sell_price": 1.1,
+        "quality_bonus": 0.9,
+        "satisfaction": 0.5,
+        "best_for": "Thu hoạch nhanh"
+      }
+    },
+    {
+      "time": "12:00",
+      "weather": "windy",
+      "duration": 30,
+      "players": 15,
+      "reasoning": "Tình hình tốt → tạo thử thách nhẹ với thời tiết windy",
+      "effects": {
+        "growth_rate": 1.2,
+        "sell_price": 1.1,
+        "quality_bonus": 0.9,
+        "satisfaction": 0.5,
+        "best_for": "Thu hoạch nhanh"
+      }
+    },
+    {
+      "time": "13:00",
+      "weather": "windy",
+      "duration": 15,
+      "players": 20,
+      "reasoning": "Tình hình tốt → tạo thử thách nhẹ với thời tiết windy",
+      "effects": {
+        "growth_rate": 1.2,
+        "sell_price": 1.1,
+        "quality_bonus": 0.9,
+        "satisfaction": 0.5,
+        "best_for": "Thu hoạch nhanh"
+      }
+    },
+    {
+      "time": "14:00",
+      "weather": "windy",
+      "duration": 15,
+      "players": 20,
+      "reasoning": "Tình hình tốt → tạo thử thách nhẹ với thời tiết windy",
+      "effects": {
+        "growth_rate": 1.2,
+        "sell_price": 1.1,
+        "quality_bonus": 0.9,
+        "satisfaction": 0.5,
+        "best_for": "Thu hoạch nhanh"
+      }
+    },
+    {
+      "time": "15:00",
+      "weather": "windy",
+      "duration": 15,
+      "players": 20,
+      "reasoning": "Tình hình tốt → tạo thử thách nhẹ với thời tiết windy",
+      "effects": {
+        "growth_rate": 1.2,
+        "sell_price": 1.1,
+        "quality_bonus": 0.9,
+        "satisfaction": 0.5,
+        "best_for": "Thu hoạch nhanh"
+      }
+    },
+    {
+      "time": "16:00",
+      "weather": "windy",
+      "duration": 15,
+      "players": 20,
+      "reasoning": "Tình hình tốt → tạo thử thách nhẹ với thời tiết windy",
+      "effects": {
+        "growth_rate": 1.2,
+        "sell_price": 1.1,
+        "quality_bonus": 0.9,
+        "satisfaction": 0.5,
+        "best_for": "Thu hoạch nhanh"
+      }
+    },
+    {
+      "time": "17:00",
+      "weather": "windy",
+      "duration": 15,
+      "players": 20,
+      "reasoning": "Tình hình tốt → tạo thử thách nhẹ với thời tiết windy",
+      "effects": {
+        "growth_rate": 1.2,
+        "sell_price": 1.1,
+        "quality_bonus": 0.9,
+        "satisfaction": 0.5,
+        "best_for": "Thu hoạch nhanh"
+      }
+    },
+    {
+      "time": "18:00",
+      "weather": "windy",
+      "duration": 15,
+      "players": 25,
+      "reasoning": "Tình hình tốt → tạo thử thách nhẹ với thời tiết windy",
+      "effects": {
+        "growth_rate": 1.2,
+        "sell_price": 1.1,
+        "quality_bonus": 0.9,
+        "satisfaction": 0.5,
+        "best_for": "Thu hoạch nhanh"
+      }
+    },
+    {
+      "time": "19:00",
+      "weather": "storm",
+      "duration": 15,
+      "players": 25,
+      "reasoning": "Ban đêm + có người chơi → tạo thử thách thú vị",
+      "effects": {
+        "growth_rate": 0.7,
+        "sell_price": 1.5,
+        "quality_bonus": 1.2,
+        "satisfaction": 0.3,
+        "best_for": "Rủi ro cao, lợi nhuận cao"
+      }
+    },
+    {
+      "time": "20:00",
+      "weather": "storm",
+      "duration": 15,
+      "players": 25,
+      "reasoning": "Ban đêm + có người chơi → tạo thử thách thú vị",
+      "effects": {
+        "growth_rate": 0.7,
+        "sell_price": 1.5,
+        "quality_bonus": 1.2,
+        "satisfaction": 0.3,
+        "best_for": "Rủi ro cao, lợi nhuận cao"
+      }
+    },
+    {
+      "time": "21:00",
+      "weather": "storm",
+      "duration": 15,
+      "players": 25,
+      "reasoning": "Ban đêm + có người chơi → tạo thử thách thú vị",
+      "effects": {
+        "growth_rate": 0.7,
+        "sell_price": 1.5,
+        "quality_bonus": 1.2,
+        "satisfaction": 0.3,
+        "best_for": "Rủi ro cao, lợi nhuận cao"
+      }
+    },
+    {
+      "time": "22:00",
+      "weather": "storm",
+      "duration": 15,
+      "players": 25,
+      "reasoning": "Ban đêm + có người chơi → tạo thử thách thú vị",
+      "effects": {
+        "growth_rate": 0.7,
+        "sell_price": 1.5,
+        "quality_bonus": 1.2,
+        "satisfaction": 0.3,
+        "best_for": "Rủi ro cao, lợi nhuận cao"
+      }
+    },
+    {
+      "time": "23:00",
+      "weather": "cloudy",
+      "duration": 60,
+      "players": 3,
+      "reasoning": "Ban đêm + ít người → thời tiết nhẹ nhàng",
+      "effects": {
+        "growth_rate": 1.0,
+        "sell_price": 1.0,
+        "quality_bonus": 1.1,
+        "satisfaction": 0.7,
+        "best_for": "Cân bằng chung"
+      }
+    }
+  ],
+  "statistics": {
+    "cloudy": 7,
+    "sunny": 4,
+    "windy": 9,
+    "storm": 4
+  }
+}

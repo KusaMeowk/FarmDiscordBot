@@ -1,0 +1,28 @@
+{
+  "decisions": {
+    "high-high-low-sunny": {
+      "decision": {
+        "action_type": "EVENT_TRIGGER",
+        "reasoning": "Nền kinh tế có sức khỏe tốt (0.89) và 100% người chơi hoạt động, cho thấy sự ổn định chung. Tuy nhiên, phân bổ tiền tệ đang mất cân bằng với phần lớn người chơi có số dư thấp (5/7 người chơi dưới 10k coins), trong khi có người chơi rất giàu. Một sự kiện tăng cường thu nhập sẽ giúp các người chơi có ít tiền tích lũy nhanh hơn, khuyến khích hoạt động mà không gây lạm phát đáng kể hoặc làm trầm trọng thêm khoảng cách giàu nghèo.",
+        "confidence": 0.9,
+        "parameters": {
+          "weather_type": null,
+          "event_name": "Tuần Lễ Mùa Màng Bội Thu",
+          "duration_hours": 24,
+          "effect_value": 1.1
+        },
+        "expected_impact": "Tăng tốc độ tích lũy tiền cho tất cả người chơi, đặc biệt là người chơi mới và người chơi có số dư thấp, khuyến khích họ tham gia nhiều hơn vào các hoạt động nông trại. Điều này dự kiến sẽ cải thiện dần sự phân bổ tài sản và duy trì sự gắn kết của người chơi.",
+        "priority": "medium"
+      },
+      "created_at": "2025-06-21T17:32:44.111224",
+      "last_used": "2025-06-21T17:32:44.111228",
+      "usage_count": 1,
+      "pattern": "high-high-low-sunny"
+    }
+  },
+  "stats": {
+    "hits": 0,
+    "misses": 1,
+    "tokens_saved": 0
+  }
+}

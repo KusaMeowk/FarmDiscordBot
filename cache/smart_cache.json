@@ -1,0 +1,46 @@
+{
+  "decisions": {
+    "high-medium-low-sunny": {
+      "decision": {
+        "action_type": "NO_ACTION",
+        "reasoning": "Test decision",
+        "confidence": 0.5,
+        "parameters": {},
+        "expected_impact": "No impact",
+        "duration_hours": 1,
+        "priority": "low",
+        "timestamp": "2025-06-26T20:26:24.131169"
+      },
+      "created_at": "2025-06-26T20:26:24.131188",
+      "last_used": "2025-06-26T20:26:24.131189",
+      "usage_count": 1,
+      "pattern": "high-medium-low-sunny"
+    },
+    "high-high-low-sunny": {
+      "decision": {
+        "action_type": "EVENT_TRIGGER",
+        "reasoning": "Dữ liệu cho thấy 100% người chơi đang hoạt động và tổng tiền lưu hành cao, nhưng cũng có sự chênh lệch đáng kể trong phân bổ tiền (1 người chơi có dưới 1k, 4 người chơi có hơn 100k). Mặc dù điểm sức khỏe kinh tế là 0.71, việc có người chơi với số vốn rất thấp là một rủi ro. Kích hoạt sự kiện tăng sản lượng sẽ trực tiếp làm tăng thu nhập cho tất cả người chơi, đặc biệt giúp người chơi có ít vốn hơn nhanh chóng tích lũy tài sản và thu hẹp khoảng cách kinh tế. Đồng thời, sự kiện này cũng thúc đẩy hoạt động canh tác và giữ chân người chơi.",
+        "confidence": 0.9,
+        "parameters": {
+          "event_name": "Mùa Bội Thu Bất Ngờ",
+          "effect_type": "yield_bonus",
+          "effect_value": 1.25,
+          "duration_hours": 4
+        },
+        "expected_impact": "Tăng đáng kể thu nhập từ nông nghiệp cho tất cả người chơi, giúp người chơi có ít tiền hơn nhanh chóng tích lũy vốn và thu hẹp khoảng cách tài sản. Đồng thời khuyến khích hoạt động canh tác và duy trì mức độ gắn kết cao của cộng đồng.",
+        "duration_hours": 4,
+        "priority": "high",
+        "timestamp": "2025-06-26T20:27:33.040224"
+      },
+      "created_at": "2025-06-26T20:27:33.040242",
+      "last_used": "2025-06-26T20:27:33.040244",
+      "usage_count": 1,
+      "pattern": "high-high-low-sunny"
+    }
+  },
+  "stats": {
+    "hits": 0,
+    "misses": 1,
+    "tokens_saved": 0
+  }
+}

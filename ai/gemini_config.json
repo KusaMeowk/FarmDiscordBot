@@ -1,0 +1,63 @@
+{
+  "gemini_apis": {
+    "primary": {
+      "api_key": "AIzaSyDpwOtLAZ3OEOUtCKAmywPKxlyC_8bLuZI",
+      "model": "gemini-2.5-flash",
+      "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent",
+      "daily_limit": 1048576,
+      "current_usage": 0,
+      "last_reset": "2025-06-21T00:00:00",
+      "enabled": true,
+      "priority": 1
+    },
+    "secondary": {
+      "api_key": "AIzaSyDHzCkdmYZ5gX25JGYSfZ-0XujDyrl568U",
+      "model": "gemini-2.5-flash",
+      "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent",
+      "daily_limit": 1048576,
+      "current_usage": 0,
+      "last_reset": "2025-06-21T00:00:00",
+      "enabled": true,
+      "priority": 2
+    },
+    "backup": {
+      "api_key": "AIzaSyDcEvqcC9bpXiPEBhs7EmtEJPM5yjdCWJo",
+      "model": "gemini-2.5-flash", 
+      "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent",
+      "daily_limit": 1048576,
+      "current_usage": 0,
+      "last_reset": "2025-06-21T00:00:00",
+      "enabled": true,
+      "priority": 3
+    }
+  },
+  "rotation_settings": {
+    "enable_auto_rotation": true,
+    "rotation_threshold": 0.8,
+    "fallback_on_error": true,
+    "max_retries_per_key": 3,
+    "retry_delay_seconds": 30,
+    "rate_limit_delay": 2,
+    "quota_reset_wait": 60
+  },
+  "cache_settings": {
+    "economic_data_cache_minutes": 30,
+    "weather_cache_minutes": 15,
+    "player_stats_cache_minutes": 60,
+    "decision_cooldown_minutes": 60
+  },
+  "economic_balance_config": {
+    "analysis_interval_hours": 1,
+    "enable_auto_intervention": true,
+    "inflation_warning_threshold": 0.08,
+    "inflation_critical_threshold": 0.15,
+    "activity_low_threshold": 0.3,
+    "money_concentration_max": 0.7,
+    "health_score_minimum": 0.4
+  },
+  "gemini_prompts": {
+    "economic_analysis": "Bạn là Latina - một bộ trưởng tài chính, phân tích dữ liệu sau và đưa ra quyết định cân bằng kinh tế chống lạm phát và tăng trưởng kinh tế...",
+    "weather_decision": "Dựa vào tình trạng kinh tế và hoạt động người chơi, hãy quyết định thời tiết phù hợp...",
+    "event_generation": "Tạo sự kiện game phù hợp để cân bằng kinh tế dựa trên dữ liệu hiện tại..."
+  }
+} 

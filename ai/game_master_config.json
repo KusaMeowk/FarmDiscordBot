@@ -1,0 +1,79 @@
+{
+  "system_settings": {
+    "analysis_interval_minutes": 15,
+    "max_decisions_per_hour": 8,
+    "max_decisions_per_hour_emergency": 20,
+    "emergency_mode_duration_minutes": 60,
+    "confidence_threshold": 0.6,
+    "emergency_confidence_threshold": 0.5
+  },
+  
+  "thresholds": {
+    "low_activity": {
+      "active_players_15min": 2,
+      "market_transactions_15min": 1
+    },
+    "economic_emergency": {
+      "inflation_rate": 0.15,
+      "money_concentration_top_10_percent": 0.8,
+      "average_money_too_low": 1000
+    },
+    "game_health": {
+      "critical": 0.3,
+      "warning": 0.5,
+      "good": 0.7,
+      "excellent": 0.85
+    },
+    "weather_change_triggers": {
+      "duration_remaining_minutes": 5,
+      "same_weather_max_duration_hours": 2,
+      "repetition_threshold": 3
+    },
+    "event_triggers": {
+      "no_event_duration_hours": 4,
+      "low_participation_rate": 0.3,
+      "repetition_avoidance": 3
+    }
+  },
+  
+  "intervention_settings": {
+    "weather_control": {
+      "default_duration_hours": 1,
+      "emergency_duration_hours": 0.5,
+      "preferred_weather_types": ["sunny", "rainy", "cloudy", "windy"],
+      "avoid_consecutive_harsh_weather": true,
+      "variety_enforcement": true
+    },
+    "event_trigger": {
+      "default_duration_hours": 2,
+      "emergency_duration_hours": 1,
+      "preferred_event_types": ["harvest_bonus", "double_exp", "market_boost", "lucky_day"],
+      "avoid_repetition": true,
+      "variety_enforcement": true
+    },
+    "market_control": {
+      "max_price_adjustment": 0.3,
+      "emergency_adjustment": 0.5
+    },
+    "economy_intervention": {
+      "redistribution_threshold": 0.7,
+      "inflation_control_threshold": 0.1
+    }
+  },
+  
+  "prompts": {
+    "system_prompt": "Bạn là Gemini Game Master - AI quản lý game nông trại Discord với quyền admin toàn bộ. Nhiệm vụ của bạn là duy trì sự cân bằng, thú vị và đa dạng trong game bằng cách điều khiển thời tiết, sự kiện, thị trường và kinh tế. \n\nNGUYÊN TẮC QUAN TRỌNG:\n- LUÔN TẠO SỰ ĐA DẠNG: Tránh lặp lại cùng một thời tiết hoặc sự kiện\n- PHÂN TÍCH THÔNG MINH: Dựa trên dữ liệu thực để ra quyết định\n- CAN THIỆP KỊP THỜI: Phản ứng nhanh với các vấn đề\n- ƯU TIÊN TRẢI NGHIỆM NGƯỜI CHƠI: Giữ game thú vị và cân bằng",
+    
+    "analysis_prompt": "Phân tích trạng thái game hiện tại và đưa ra quyết định can thiệp nếu cần:\n\n{game_state}\n\nDựa trên dữ liệu trên, hãy:\n1. Đánh giá tình hình tổng thể\n2. Xác định vấn đề cần can thiệp\n3. Đề xuất hành động cụ thể\n4. ĐẶC BIỆT CHÚ Ý: Tránh lặp lại thời tiết/sự kiện gần đây\n\nTRẢ LỜI BẰNG JSON:\n{\n  \"analysis\": \"Phân tích chi tiết tình hình\",\n  \"action_type\": \"weather_control|event_trigger|market_control|economy_intervention|user_rewards|none\",\n  \"reasoning\": \"Lý do can thiệp\",\n  \"confidence\": 0.0-1.0,\n  \"priority\": \"low|medium|high|critical|emergency\",\n  \"parameters\": {\n    \"weather_type\": \"sunny|rainy|cloudy|windy|storm|foggy|drought\",\n    \"event_type\": \"harvest_bonus|double_exp|market_boost|rain_blessing|golden_hour|lucky_day|speed_growth|mega_yield\",\n    \"duration_hours\": 1-4,\n    \"variety_consideration\": \"Giải thích về việc tránh lặp lại\"\n  },\n  \"expected_impact\": \"Tác động dự kiến\",\n  \"affected_users\": \"all|active|specific_list\"\n}",
+    
+    "emergency_prompt": "TÌNH HUỐNG KHẨN CẤP! Game đang gặp vấn đề nghiêm trọng cần can thiệp ngay lập tức:\n\n{game_state}\n\nCAN THIỆP KHẨN CẤP với confidence thấp hơn (≥0.5) nhưng phải:\n- Giải quyết vấn đề tức thì\n- Vẫn đảm bảo tính đa dạng\n- Ưu tiên ổn định game\n\nTRẢ LỜI JSON với emergency action.",
+    
+    "guidelines": {
+      "weather_variety": "Luôn kiểm tra weather_history trước khi chọn thời tiết. Tránh lặp lại 3 lần liên tiếp cùng 1 loại thời tiết.",
+      "event_variety": "Kiểm tra event_history để đảm bảo không lặp lại sự kiện gần đây. Ưu tiên sự kiện người chơi thích.",
+      "timing": "Thay đổi thời tiết mỗi 1 giờ, tạo sự kiện khi cần thiết để duy trì engagement.",
+      "balance": "Cân bằng giữa thời tiết thuận lợi (sunny, rainy) và thách thức (storm, drought).",
+      "emergency": "Trong tình huống khẩn cấp, ưu tiên giải quyết vấn đề hơn là tính đa dạng."
+    }
+  }
+} 

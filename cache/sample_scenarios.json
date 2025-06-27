@@ -1,0 +1,313 @@
+{
+  "morning_scenarios": [
+    {
+      "pattern": "high-good-medium-sunny-morning-balanced_0000",
+      "name": "🌅 Bình Minh Vàng Son",
+      "description": "Ánh nặng ban mai tạo điều kiện lý tương cho nông nghiệp",
+      "action_type": "WEATHER_ENHANCEMENT",
+      "confidence": 0.85,
+      "priority": "medium",
+      "reasoning": "Thời tiết thuận lợi buổi sáng tạo cơ hội tăng năng suất cây trồng. Nên tận dụng momentum này.",
+      "parameters": {
+        "weather_type": "sunny",
+        "growth_boost": 1.25,
+        "duration_hours": 6,
+        "crop_types": [
+          "all"
+        ]
+      }
+    },
+    {
+      "pattern": "medium-fair-high-cloudy-morning-unbalanced_0001",
+      "name": "☁️ Sương Mù Kì Bí",
+      "description": "Lớp sương mù dày đặc che phủ nông trại, tạo điều kiện đặc biệt",
+      "action_type": "EVENT_TRIGGER",
+      "confidence": 0.9,
+      "priority": "high",
+      "reasoning": "Sương mù tạo điều kiện lý tưởng cho nấm và cây ăn lá. Cơ hội kiếm tiền hiếm có.",
+      "parameters": {
+        "event_name": "🍄 Mùa Nấm Bí Ẩn",
+        "description": "Sương mù dày đặc giúp nấm mọc dày đặc! Giá nấm tăng 200%",
+        "effect_type": "crop_price_bonus",
+        "target_crops": [
+          "mushroom",
+          "lettuce",
+          "spinach"
+        ],
+        "multiplier": 3.0,
+        "duration_hours": 8,
+        "rarity": "rare"
+      }
+    }
+  ],
+  "afternoon_scenarios": [
+    {
+      "pattern": "high-good-low-sunny-afternoon-balanced_0002",
+      "name": "☀️ Nắng Vàng Cháy",
+      "description": "Nắng gắt buổi trưa thử thách sức bền của nông dân",
+      "action_type": "CHALLENGE_EVENT",
+      "confidence": 0.8,
+      "priority": "medium",
+      "reasoning": "Nắng gắt tạo thách thức nhưng cũng có cơ hội. Cây chịu nắng sẽ phát triển mạnh.",
+      "parameters": {
+        "event_name": "🔥 Thử Thách Nắng Gắt",
+        "description": "Nắng cực gắt! Cây chịu hạn phát triển 150%, cây khác chậm 25%",
+        "effect_type": "selective_growth",
+        "bonus_crops": [
+          "tomato",
+          "corn",
+          "chili"
+        ],
+        "bonus_multiplier": 1.5,
+        "penalty_crops": [
+          "lettuce",
+          "cabbage"
+        ],
+        "penalty_multiplier": 0.75,
+        "duration_hours": 4
+      }
+    },
+    {
+      "pattern": "low-poor-medium-rainy-afternoon-unbalanced_0003",
+      "name": "🌧️ Cơn Mưa Cứu Tinh",
+      "description": "Cơn mưa xuất hiện đúng lúc khi nông dân đang khó khăn",
+      "action_type": "RECOVERY_EVENT",
+      "confidence": 0.95,
+      "priority": "critical",
+      "reasoning": "Kinh tế đang khó khăn, cần sự kiện phục hồi để giúp người chơi. Mưa mang lại hy vọng mới.",
+      "parameters": {
+        "event_name": "💧 Hồi Sinh Đất Đai",
+        "description": "Cơn mưa phù sa mang lại dinh dưỡng! Tất cả cây trồng tăng 200% yield",
+        "effect_type": "yield_boost",
+        "multiplier": 3.0,
+        "duration_hours": 12,
+        "additional_effects": {
+          "free_seeds": 10,
+          "reduced_costs": 0.5
+        }
+      }
+    }
+  ],
+  "evening_scenarios": [
+    {
+      "pattern": "medium-fair-high-clear-evening-balanced_0004",
+      "name": "🌅 Hoàng Hôn Cát Tường",
+      "description": "Hoàng hôn đẹp mang lại cảm hứng và may mắn cho nông dân",
+      "action_type": "LUCK_EVENT",
+      "confidence": 0.88,
+      "priority": "medium",
+      "reasoning": "Hoàng hôn đẹp tạo tâm trạng tích cực. Thời điểm tốt cho sự kiện may mắn.",
+      "parameters": {
+        "event_name": "🍀 Điều Ước Hoàng Hôn",
+        "description": "Hoàng hôn cát tường! 25% cơ hội nhận double coins khi harvest",
+        "effect_type": "luck_bonus",
+        "probability": 0.25,
+        "bonus_type": "double_coins",
+        "duration_hours": 6,
+        "activation": "on_harvest"
+      }
+    },
+    {
+      "pattern": "high-good-medium-windy-evening-concentrated_0005",
+      "name": "💨 Gió Thổi Của Cải",
+      "description": "Gió mạnh mang theo cơ hội kinh doanh từ vùng xa",
+      "action_type": "MARKET_EVENT",
+      "confidence": 0.82,
+      "priority": "high",
+      "reasoning": "Phân phối tiền tập trung ở người giàu. Cần event để lan tỏa richness ra community.",
+      "parameters": {
+        "event_name": "💰 Thương Gia Xa Xứ",
+        "description": "Thương gia từ vùng xa đến mua nông sản! Giá mua +50%, nhưng chỉ 3 người đầu tiên",
+        "effect_type": "limited_bonus",
+        "price_multiplier": 1.5,
+        "participant_limit": 3,
+        "duration_hours": 2,
+        "first_come_first_serve": true
+      }
+    }
+  ],
+  "night_scenarios": [
+    {
+      "pattern": "low-fair-low-clear-night-balanced_0006",
+      "name": "🌙 Ánh Trăng Thần Bí",
+      "description": "Ánh trăng sáng tạo ra hiện tượng kỳ lạ trong nông trại",
+      "action_type": "MYSTICAL_EVENT",
+      "confidence": 0.9,
+      "priority": "high",
+      "reasoning": "Ít người chơi active ban đêm, nhưng trăng tròn tạo cơ hội đặc biệt cho night owls.",
+      "parameters": {
+        "event_name": "✨ Phép Thuật Ánh Trăng",
+        "description": "Ánh trăng biến cây trồng thành phiên bản premium! +300% giá trị",
+        "effect_type": "transformation",
+        "transform_chance": 0.15,
+        "value_multiplier": 4.0,
+        "duration_hours": 8,
+        "night_only": true
+      }
+    },
+    {
+      "pattern": "medium-poor-medium-stormy-night-unbalanced_0007",
+      "name": "⛈️ Bão Tố Kinh Hoàng",
+      "description": "Cơn bão dữ dội tấn công trong đêm, đe dọa mọi thứ",
+      "action_type": "CRISIS_EVENT",
+      "confidence": 0.92,
+      "priority": "critical",
+      "reasoning": "Kinh tế yếu + bão đêm = crisis. Cần event dramatic để test player resilience.",
+      "parameters": {
+        "event_name": "💀 Thảm Họa Tự Nhiên",
+        "description": "Bão tố phá hủy 50% cây trồng! Nhưng ai survive sẽ nhận bonus 5x",
+        "effect_type": "high_risk_high_reward",
+        "destruction_rate": 0.5,
+        "survivor_bonus": 5.0,
+        "duration_hours": 6,
+        "requires_action": true,
+        "action_type": "protect_crops"
+      }
+    }
+  ],
+  "crisis_scenarios": [],
+  "prosperity_scenarios": [],
+  "seasonal_scenarios": [
+    {
+      "pattern": "any-any-any-any-spring-any_0008",
+      "name": "🌸 Lễ Hội Hoa Anh Đào",
+      "description": "Mùa xuân nở hoa, du khách đến tham quan nông trại",
+      "action_type": "SEASONAL_EVENT",
+      "confidence": 0.9,
+      "priority": "medium",
+      "reasoning": "Mùa xuân nở hoa, du khách đến tham quan nông trại",
+      "parameters": {
+        "pattern": "any-any-any-any-spring-any",
+        "name": "🌸 Lễ Hội Hoa Anh Đào",
+        "description": "Mùa xuân nở hoa, du khách đến tham quan nông trại",
+        "effect": "tourist_bonus",
+        "multiplier": 1.4,
+        "duration": 24
+      }
+    },
+    {
+      "pattern": "any-any-any-rainy-spring-any_0009",
+      "name": "🌱 Mưa Phù Sa Màu Mỡ",
+      "description": "Mưa xuân mang phù sa, đất đai trở nên màu mỡ hơn",
+      "action_type": "SEASONAL_EVENT",
+      "confidence": 0.9,
+      "priority": "medium",
+      "reasoning": "Mưa xuân mang phù sa, đất đai trở nên màu mỡ hơn",
+      "parameters": {
+        "pattern": "any-any-any-rainy-spring-any",
+        "name": "🌱 Mưa Phù Sa Màu Mỡ",
+        "description": "Mưa xuân mang phù sa, đất đai trở nên màu mỡ hơn",
+        "effect": "soil_improvement",
+        "bonus": "permanent_yield_+10%",
+        "duration": 168
+      }
+    },
+    {
+      "pattern": "any-any-any-sunny-summer-any_0010",
+      "name": "☀️ Ngày Hè Rực Rỡ",
+      "description": "Nắng hè cháy mang lại năng lượng tối đa cho cây trồng",
+      "action_type": "SEASONAL_EVENT",
+      "confidence": 0.9,
+      "priority": "medium",
+      "reasoning": "Nắng hè cháy mang lại năng lượng tối đa cho cây trồng",
+      "parameters": {
+        "pattern": "any-any-any-sunny-summer-any",
+        "name": "☀️ Ngày Hè Rực Rỡ",
+        "description": "Nắng hè cháy mang lại năng lượng tối đa cho cây trồng",
+        "effect": "solar_boost",
+        "growth_speed": 2.0,
+        "duration": 12
+      }
+    },
+    {
+      "pattern": "any-any-any-hot-summer-any_0011",
+      "name": "🔥 Sóng Nhiệt Cực Đoan",
+      "description": "Nhiệt độ cực cao, chỉ cây chịu hạn mới survive",
+      "action_type": "SEASONAL_EVENT",
+      "confidence": 0.9,
+      "priority": "medium",
+      "reasoning": "Nhiệt độ cực cao, chỉ cây chịu hạn mới survive",
+      "parameters": {
+        "pattern": "any-any-any-hot-summer-any",
+        "name": "🔥 Sóng Nhiệt Cực Đoan",
+        "description": "Nhiệt độ cực cao, chỉ cây chịu hạn mới survive",
+        "effect": "heat_challenge",
+        "resistant_crops": [
+          "cactus",
+          "corn",
+          "tomato"
+        ],
+        "bonus": 3.0,
+        "duration": 8
+      }
+    },
+    {
+      "pattern": "any-any-any-any-autumn-any_0012",
+      "name": "🍂 Mùa Thu Vàng Óng",
+      "description": "Mùa thu đến, thời điểm vàng của nông nghiệp",
+      "action_type": "SEASONAL_EVENT",
+      "confidence": 0.9,
+      "priority": "medium",
+      "reasoning": "Mùa thu đến, thời điểm vàng của nông nghiệp",
+      "parameters": {
+        "pattern": "any-any-any-any-autumn-any",
+        "name": "🍂 Mùa Thu Vàng Óng",
+        "description": "Mùa thu đến, thời điểm vàng của nông nghiệp",
+        "effect": "harvest_festival",
+        "all_crops_bonus": 1.5,
+        "duration": 72
+      }
+    },
+    {
+      "pattern": "any-any-any-windy-autumn-any_0013",
+      "name": "💨 Gió Thu Mang Lá Vàng",
+      "description": "Gió thu thổi bay hạt giống đặc biệt từ xa",
+      "action_type": "SEASONAL_EVENT",
+      "confidence": 0.9,
+      "priority": "medium",
+      "reasoning": "Gió thu thổi bay hạt giống đặc biệt từ xa",
+      "parameters": {
+        "pattern": "any-any-any-windy-autumn-any",
+        "name": "💨 Gió Thu Mang Lá Vàng",
+        "description": "Gió thu thổi bay hạt giống đặc biệt từ xa",
+        "effect": "seed_rain",
+        "free_rare_seeds": 5,
+        "duration": 6
+      }
+    },
+    {
+      "pattern": "any-any-any-cold-winter-any_0014",
+      "name": "❄️ Mùa Đông Băng Giá",
+      "description": "Băng tuyết phủ trắng, chỉ cây chịu lạnh mới phát triển",
+      "action_type": "SEASONAL_EVENT",
+      "confidence": 0.9,
+      "priority": "medium",
+      "reasoning": "Băng tuyết phủ trắng, chỉ cây chịu lạnh mới phát triển",
+      "parameters": {
+        "pattern": "any-any-any-cold-winter-any",
+        "name": "❄️ Mùa Đông Băng Giá",
+        "description": "Băng tuyết phủ trắng, chỉ cây chịu lạnh mới phát triển",
+        "effect": "winter_survival",
+        "cold_resistant_bonus": 2.5,
+        "duration": 24
+      }
+    },
+    {
+      "pattern": "any-any-any-snowy-winter-any_0015",
+      "name": "⛄ Tuyết Rơi Ma Thuật",
+      "description": "Tuyết ma thuật làm đất đai màu mỡ cho năm tới",
+      "action_type": "SEASONAL_EVENT",
+      "confidence": 0.9,
+      "priority": "medium",
+      "reasoning": "Tuyết ma thuật làm đất đai màu mỡ cho năm tới",
+      "parameters": {
+        "pattern": "any-any-any-snowy-winter-any",
+        "name": "⛄ Tuyết Rơi Ma Thuật",
+        "description": "Tuyết ma thuật làm đất đai màu mỡ cho năm tới",
+        "effect": "snow_blessing",
+        "next_season_bonus": 1.2,
+        "duration": 48
+      }
+    }
+  ]
+}
