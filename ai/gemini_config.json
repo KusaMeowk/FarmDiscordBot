@@ -1,7 +1,7 @@
 {
   "gemini_apis": {
     "primary": {
-      "api_key": "AIzaSyDpwOtLAZ3OEOUtCKAmywPKxlyC_8bLuZI",
+      "api_key": "<Gemini_api>",
       "model": "gemini-2.5-flash",
       "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent",
       "daily_limit": 1048576,
@@ -11,7 +11,7 @@
       "priority": 1
     },
     "secondary": {
-      "api_key": "AIzaSyDHzCkdmYZ5gX25JGYSfZ-0XujDyrl568U",
+      "api_key": "<Gemini_api>",
       "model": "gemini-2.5-flash",
       "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent",
       "daily_limit": 1048576,
@@ -21,7 +21,7 @@
       "priority": 2
     },
     "backup": {
-      "api_key": "AIzaSyDcEvqcC9bpXiPEBhs7EmtEJPM5yjdCWJo",
+      "api_key": "<Gemini_api>",
       "model": "gemini-2.5-flash", 
       "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent",
       "daily_limit": 1048576,
